@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: 'Roboto';
+    background-color: #f9f6d3;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer {
+    background-color: rgba(105, 66, 27, 0.79);
+    color: #fff;
+    padding: 1px 20px;
+}
+
+main{
+    padding: 20px;
+}
+
+h1,
+h2 {
+    font-family: 'Arvo';
+}
+
+footer p {
+    text-align: center;
+    font-style: italic;
+}
+
