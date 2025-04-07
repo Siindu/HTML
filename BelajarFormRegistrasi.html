@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(240, 240, 240);
+        }
+        #formRegis .row{
+            margin: 10px;
+        }
+        #formRegis .row > label{
+            display: inline-block;
+            width: 150px;
+        }
+        #formRegis .radioGroup,
+        #formRegis .checkGroup{
+            display: inline-block;
+        }
+        textarea,
+        #labelGender,
+        #labelRank{
+            vertical-align: top;
+        }
+        input,
+        textarea,
+        option,
+        select{
+            border: none;
+            padding: 5px;
+            background-color: rgb(240, 240, 240);
+            border: 1px solid black;
+        }
+        input:focus{
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Registrasi RRQ</h1>
+    </header>
+    <main>
+        <form action="" id="formRegis">
+            <div class="row">
+                <label for="inputNama">Nama</label>
+                    <input type="text" name="nama" id="inputNama" requird autofocus>
+            </div>
+            <div class="row">
+                <label for="inputAlamat">Alamat</label>
+                    <textarea name="alamat" id="inputAlamat"></textarea>
+            </div>
+            <div class="row">
+                <label for="inputTangalLahir">Tanggal Lahir</label>
+                    <input type="date" name="tanggalLahir" id="inputTanggalLahir" required>               
+            </div>
+            <div class="row">
+                <label id="labelGender">Gender</label>
+                <div class="radioGroup">
+                    <div>
+                        <input type="radio" name="gender" value="L" id="radioLaki" disabled>
+                        <label for="radioLaki">Laki-Laki</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" value="P" id="radioPerempuan" disabled>
+                        <label for="radioPerempuan">Perempuan</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" value="G" id="radioGay">
+                        <label for="radioGay">GAY</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <label for="inputTinggi">Tinggi Badan</label>
+                <input type="number" name="tinggi" id="inputTinggi" min="50">
+                <span>sentimeter</span>
+            </div>
+            <div class="row">
+                <label for="inputStatus">Rank ML</label>
+                <select name="status" id="inputStatus">
+                    <option disabled selected>Pilih Rank</option>
+                    <option value="1">EPIC</option>
+                    <option value="2">Legend</option>
+                    <option value="3">Mytich</option>
+                    <option value="4">Mytich Honor</option>
+                    <option value="5">Mytich Glory</option>
+                    <option value="6">Mytich Imortal</option>
+                </select>
+            </div>
+            <div class="row">
+                <label id="labelRank">Role</label>
+                <div class="checkGroup">
+                    <div>
+                        <input type="checkbox" name="layanan" id="checkLayanan1" value="1">
+                        <label for="checkLayanan1">Choach</label>                       
+                    </div>
+                    <div>
+                        <input type="checkbox" name="layanan" id="checkLayanan1" value="2">
+                        <label for="checkLayanan2">Jungler</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="layanan" id="checkLayanan1" value="3">
+                        <label for="checkLayanan3">Mid</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="layanan" id="checkLayanan1" value="4">
+                        <label for="checkLayanan4">Roam</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="layanan" id="checkLayanan1" value="5">
+                        <label for="checkLayanan5">Gold</label>                  
+                    </div>
+                    <div>
+                        <input type="checkbox" name="layanan" id="checkLayanan1" value="6">
+                        <label for="checkLayanan6">Exp</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
