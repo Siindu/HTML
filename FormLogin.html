@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar From Login</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: bold;
+        }
+        header{
+            text-align: center;
+        }
+        header h1{
+            display: inline;
+            vertical-align: middle;
+        }
+        header img{
+            width: 25px;
+            vertical-align: middle;
+        }
+        #loginForm{
+            background-color: rgb(255, 255, 255);
+            width: 300px;
+            padding: 20px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin: auto;
+        }
+        #loginForm label{
+            width: 120px;
+            display: inline-block;
+        }
+        #loginForm input{
+            width: 160px;
+        }
+        #loginForm .row{
+            margin-bottom: 5px;
+        }
+        .row:last-child{
+            margin-left: 125px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Source/D1.png" alt="Logo" id="Logo">
+        <h1>Login</h1>
+    </header>
+    <main>
+        <form action="" id="loginForm">
+            <div class="row">
+                <label for="inputUsername">Username</label>
+                <input type="text" name="username" id="inputUsername" autofocus required>
+            </div>
+            <div class="row">
+                <label for="inputPassword">Password</label >
+                <input type="password" name="password" id="inputPassword" required>
+            </div>
+            <div class="row">
+                <button type="submit">Login</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
